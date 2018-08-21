@@ -12,9 +12,9 @@ build_image:
   - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN 
 registry.scpio.net
   - docker build -t 
-registry.scpio.net/cust/cdc/easyrepas/asterisk:${CI_COMMIT_REF_SLUG} 
+registry.scpio.net/open-source/asterisk/pipelines/asterisk:${CI_COMMIT_REF_SLUG} 
 .
   - docker push 
-registry.scpio.net/cust/cdc/easyrepas/asterisk:${CI_COMMIT_REF_SLUG}
+registry.scpio.net/open-source/asterisk/pipelines/asterisk:${CI_COMMIT_REF_SLUG}
   only:
   - branches
