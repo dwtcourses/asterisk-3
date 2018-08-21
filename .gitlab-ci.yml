@@ -13,7 +13,7 @@ build_image:
 registry.scpio.net
   - docker build -t 
 registry.scpio.net/open-source/asterisk:${CI_COMMIT_REF_SLUG} 
-.
+./asterisk
   - docker push 
 registry.scpio.net/open-source/asterisk:${CI_COMMIT_REF_SLUG}
   only:
