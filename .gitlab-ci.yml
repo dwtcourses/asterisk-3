@@ -1,0 +1,20 @@
+stages:
+  - build
+
+build_image:
+  stage: build
+  image: docker:git
+  services:
+  - docker:dind
+  variables:
+    DOCKER_DRIVER: overlay
+  script:
+  - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN 
+registry.scpio.net
+  - docker build -t 
+registry.scpio.net/cust/cdc/easyrepas/asterisk:${CI_COMMIT_REF_SLUG} 
+.
+  - docker push 
+registry.scpio.net/cust/cdc/easyrepas/asterisk:${CI_COMMIT_REF_SLUG}
+  only:
+  - branches
