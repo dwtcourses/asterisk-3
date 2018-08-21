@@ -1,0 +1,5 @@
+# Asterisk configuration
+asterisk/conf/*
+
+# Docker-compose for test
+docker-compose.yml
