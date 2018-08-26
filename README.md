@@ -1,4 +1,5 @@
 <img src="http://static.scorpio-interactive.com/misc/asterisk_logo.svg" alt="Asterisk's Logo" height="70">
+
 # Asterisk Image
 Clean Asterisk image by [Scorpio Interactive](https://www.scorpio-interactive.com)
 
