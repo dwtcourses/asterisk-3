@@ -9,7 +9,7 @@ build_image:
   variables:
     DOCKER_DRIVER: overlay
   script:
-  - echo '${CI_BUILD_TOKEN}' | docker login -u gitlab-ci-token --password-stdin registry.scpio.net
+  - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN registry.scpio.net
   - echo '${DOCKER_HUB_TOKEN}' | docker login -u '${DOCKER_HUB_USER}' --password-stdin
   - docker build -t registry.scpio.net/open-source/asterisk:${CI_COMMIT_REF_SLUG} -t scorpioint/asterisk ./asterisk
   - docker push registry.scpio.net/open-source/asterisk:${CI_COMMIT_REF_SLUG}
