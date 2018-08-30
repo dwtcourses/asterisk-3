@@ -12,6 +12,8 @@ build_image:
   - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN registry.scpio.net
   - docker build -t registry.scpio.net/open-source/asterisk:${CI_COMMIT_REF_SLUG} -t scorpioint/asterisk ./asterisk
   - docker push registry.scpio.net/open-source/asterisk:${CI_COMMIT_REF_SLUG}
+  - docker logout registry.scpio.net
+  - echo ${DOCKER_ID_TOKEN} | docker login -u ${DOCKER_ID_USER} --password-stdin
   - docker push scorpioint/asterisk
   only:
   - master
