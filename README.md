@@ -1,5 +1,6 @@
-<img src="http://static.scorpio-interactive.com/misc/asterisk_logo.svg" alt="Asterisk's Logo" height="70">
+<img src="https://static.scorpio-interactive.com/md/logo/sorpioint-asterisk.svg" alt="Asterisk Image logo" width="100%" height="144">
 
+___
 # Asterisk Image
 Clean Asterisk image by [Scorpio Interactive](https://www.scorpio-interactive.com)
 
@@ -38,8 +39,13 @@ Docker-compose (optionnal)
   ```
   docker pull registry.scpio.net:/open-source/asterisk:master
   ```
+  * From Docker Cloud
+  ```
+  docker pull scorpioint/asterisk
+  ```
 
-1. Run the immage
+
+1. Run the image
 
   * With docker run
 
@@ -51,7 +57,7 @@ Docker-compose (optionnal)
   -p "4026:4026/udp" \
   -p "1000-2000:1000-2000/udp" \
   -p "2727:2727/udp" \
-  asterisk:master \
+  scorpioint/asterisk \
   ```
 
   * With docker compose
@@ -61,11 +67,11 @@ Docker-compose (optionnal)
   services:
     asterisk:
       #image: registry.scpio.net/open-source/asterisk:master
-      #or image: asterisk:master
+      #or image: scorpioint/asterisk:latest
       #or build: ./asterisk
       container_name: my_asterisk
       volumes:
-        - "./path/to/asterisk/configuration/:/etc/asterisk"
+        - "path/to/asterisk/configuration/:/etc/asterisk"
       ports:
         - "5060:5060/udp"
         - "4069:4069/udp"
@@ -81,9 +87,10 @@ version: '3.6'
 services:
   asterisk:
     image: registry.scpio.net/open-source/asterisk:master
+    #or image: scorpioint/asterisk
     container_name: my_asterisk
     volumes:
-      - "./path/to/asterisk/configuration/:/etc/asterisk"
+      - "path/to/asterisk/configuration/:/etc/asterisk"
     ports:
       - "5060:5060/udp"
       - "4069:4069/udp"
