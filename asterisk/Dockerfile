@@ -17,7 +17,7 @@ RUN apt-get update -qq && \
 
 WORKDIR /usr/src/asterisk/
 
-ARG ASTERISK_SRC_VERSION=13.22.0
+ARG ASTERISK_SRC_VERSION=14.7.7
 
 RUN wget --quiet http://downloads.asterisk.org/pub/telephony/asterisk/asterisk-${ASTERISK_SRC_VERSION}.tar.gz && tar xf asterisk-${ASTERISK_SRC_VERSION}.tar.gz && rm asterisk-${ASTERISK_SRC_VERSION}.tar.gz
 
