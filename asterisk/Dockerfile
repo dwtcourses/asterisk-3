@@ -19,7 +19,7 @@ WORKDIR /usr/src/asterisk/
 
 ARG ASTERISK_SRC_VERSION=13.22.0
 
-RUN wget --quiet http://downloads.asterisk.org/pub/telephony/asterisk/asterisk-${ASTERISK_SRC_VERSION}.tar.gz && tar xf asterisk-${ASTERISK_SRC_VERSION}.tar.gz && rm asterisk-${ASTERISK_SRC_VERSION}.tar.gz
+RUN wget --quiet http://downloads.asterisk.org/pub/telephony/asterisk/releases/asterisk-${ASTERISK_SRC_VERSION}.tar.gz && tar xf asterisk-${ASTERISK_SRC_VERSION}.tar.gz && rm asterisk-${ASTERISK_SRC_VERSION}.tar.gz
 
 WORKDIR /usr/src/asterisk/releases/asterisk-${ASTERISK_SRC_VERSION}
 
