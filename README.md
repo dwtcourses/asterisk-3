@@ -1,8 +1,13 @@
-<img src="https://static.scorpio-interactive.com/md/logo/sorpioint-asterisk.svg" alt="Asterisk Image logo" width="100%" height="144">
+<img src="https://static.scorpio-interactive.com/md/logo/sorpioint-asterisk.svg" alt="Asterisk Image logo" width="100%" height="100">
 
 ___
 # Asterisk Image
-Clean Asterisk image by [Scorpio Interactive](https://www.scorpio-interactive.com)
+Clean Asterisk image by [Scorpio Interactive](https://www.scorpio-interactive.com)  
+Optimized for Europe (French) and North America
+
+## Versioning
+All notable changes to this project will be documented in [CHANGELOG.md](CHANGELOG.md).  
+We use [SemVer](https://semver.org/spec/v2.0.0.html) for versioning. For the versions available, see the [tags on this repository](https://git.scorpio-interactive.com/open-source/asterisk/tags).
 
 ## Getting Started
 
@@ -103,10 +108,6 @@ services:
 ## Contributing
 
 Please read [CONTRIBUTING.md](CONTRIBUTION.md) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://git.scorpio-interactive.com/open-source/asterisk/tags).
 
 ## Authors
 
