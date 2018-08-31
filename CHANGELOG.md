@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.2] - 2018-08-31
+### Misc
+- Tag semantic fix
+
 ## [0.0.1] - 2018-08-31
 ### Asterisk
 - Available version(s) and module(s) in this release:
